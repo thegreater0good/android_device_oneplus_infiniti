@@ -36,6 +36,10 @@ odm/firmware/secure_ta/antdtx.b08
 odm/firmware/secure_ta/antdtx.mdt
 
 # Audio
+odm/etc/audio_algos_ver/OPAX_Version.txt
+odm/etc/audio_algos_ver/OPREC_version.txt
+odm/etc/audio_algos_ver/OPSPT_Version.txt
+odm/etc/audio_algos_ver/OPVE_Version.txt
 odm/etc/init/init.audio.rc
 odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
