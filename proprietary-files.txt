@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 15 (CPH2745_16.0.5.703(EX01)).
+## are from OnePlus 15 (CPH2745_16.0.7.201(EX01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -785,6 +785,7 @@ odm/etc/camera/fb_default
 odm/etc/camera/fb_original
 odm/etc/camera/fwk_config.json
 odm/etc/camera/gamma_masterMode_quick_hdr_conf.json
+odm/etc/camera/gamma_masterMode_quick_sdr_conf.json
 odm/etc/camera/gamma_photo_hdr_conf.json
 odm/etc/camera/gamma_photo_sdr_conf.json
 odm/etc/camera/gamma_preview_hdr_conf.json
@@ -1774,6 +1775,7 @@ odm/etc/sensor/config/kaanapali_mtp_pocket.json
 odm/etc/sensor/config/lux_aod.json
 odm/etc/sensor/config/oplus_car_motion.json
 odm/etc/sensor/config/oplus_car_scene.json
+odm/etc/sensor/config/oplus_flight_scene.json
 odm/etc/sensor/config/oplus_gyro_cal_0.json
 odm/etc/sensor/config/oplus_mag_fusion_v2.json
 odm/etc/sensor/config/oplus_pedometer_minute.json
