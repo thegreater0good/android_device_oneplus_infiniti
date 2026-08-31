@@ -35,3 +35,26 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/infiniti/BoardConfigVendor.mk
+
+# Source-built DTBO generation
+TARGET_KERNEL_DTB_TARGET := canoe_perf_dtb_build
+TARGET_KERNEL_DTBO_REPACK_SCRIPT := device/oneplus/infiniti/repack_dtbo_oem_order.sh
+
+TARGET_KERNEL_EXT_DTBO_DIRS := \
+    vendor/qcom/opensource/audio-devicetree \
+    vendor/qcom/opensource/bt-devicetree \
+    vendor/qcom/opensource/camera-devicetree \
+    vendor/qcom/opensource/data-devicetree \
+    vendor/qcom/opensource/display-devicetree \
+    vendor/qcom/opensource/dsp-devicetree \
+    vendor/qcom/opensource/eSE-devicetree \
+    vendor/qcom/opensource/eva-devicetree \
+    vendor/qcom/opensource/graphics-devicetree \
+    vendor/qcom/opensource/mm-devicetree \
+    vendor/qcom/opensource/mmrm-devicetree \
+    vendor/qcom/opensource/nfc-devicetree \
+    vendor/qcom/opensource/synx-devicetree \
+    vendor/qcom/opensource/video-devicetree \
+    vendor/qcom/opensource/wlan/wlan-devicetree \
+    vendor/qcom/proprietary/display-devicetree \
+    vendor/qcom/proprietary/mm-devicetree
