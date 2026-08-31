@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-USE_PREBUILT_KERNEL ?= true
+USE_PREBUILT_KERNEL ?= false
 
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 17062428672
@@ -23,8 +23,6 @@ TARGET_SCREEN_DENSITY := 540
 # Kernel
 ifeq ($(USE_PREBUILT_KERNEL), true)
 include device/oneplus/infiniti-kernel/BoardConfig.mk
-else
-TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_INFINITI_DTB=y
 endif
 
 # Properties
