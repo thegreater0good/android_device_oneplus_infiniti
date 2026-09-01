@@ -60,3 +60,7 @@ TARGET_KERNEL_EXT_DTBO_DIRS := \
     vendor/qcom/opensource/wlan/wlan-devicetree \
     vendor/qcom/proprietary/display-devicetree \
     vendor/qcom/proprietary/mm-devicetree
+
+# Stock game_first differs from released OSS source and crashes recovery.
+TARGET_KERNEL_GAME_FIRST_PREBUILT := \
+    device/oneplus/infiniti-kernel/modules/vendor_ramdisk/oplus_network_game_first.ko
