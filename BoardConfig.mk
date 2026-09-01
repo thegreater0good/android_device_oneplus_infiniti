@@ -36,8 +36,10 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/infiniti/BoardConfigVendor.mk
 
-# Source-built DTBO generation
+# Source-built DTB/DTBO generation
 TARGET_KERNEL_DTB_TARGET := canoe_perf_dtb_build
+TARGET_KERNEL_DTB_REPACK_SCRIPT := device/oneplus/infiniti/repack_dtb_oem_order.sh
+TARGET_KERNEL_DTB_PREBUILT_SOURCE := device/oneplus/infiniti-kernel/images/infiniti.dtb
 TARGET_KERNEL_DTBO_REPACK_SCRIPT := device/oneplus/infiniti/repack_dtbo_oem_order.sh
 
 TARGET_KERNEL_EXT_DTBO_DIRS := \
