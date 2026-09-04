@@ -61,6 +61,38 @@ TARGET_KERNEL_EXT_DTBO_DIRS := \
     vendor/qcom/proprietary/display-devicetree \
     vendor/qcom/proprietary/mm-devicetree
 
+# Canoe's source build produces zram and zsmalloc in a dedicated
+# collision-module distribution.
+TARGET_KERNEL_COLLISION_MODULES_DIST_TARGET := \
+    //soc-repo:canoe_perf_lineage_collision_modules_dist
+TARGET_KERNEL_COLLISION_MODULES_OUT_DIR := lineage-canoe-modules
+TARGET_KERNEL_COLLISION_MODULES := \
+    zram.ko \
+    zsmalloc.ko
+
+# These proprietary modules are incompatible with debug stripping.
+TARGET_KERNEL_MODULES_PRESERVE_DEBUG_INFO := \
+    oplus_bsp_ex_gpio.ko \
+    oplus_icc_mcu.ko \
+    oplus_network_702_satellite.ko \
+    oplus_network_data_module.ko \
+    oplus_network_dns_cache.ko \
+    oplus_network_dns_optimizer.ko \
+    oplus_network_fast_bwe.ko \
+    oplus_network_kernel_state_monitor.ko \
+    oplus_network_satellite.ko \
+    oplus_network_satellite_hl7603.ko \
+    oplus_network_satellite_rpc.ko \
+    oplus_network_satellite_rsmc.ko \
+    oplus_network_sched.ko \
+    oplus_network_sk_predict.ko \
+    oplus_network_snapshot.ko \
+    oplus_network_tcpdump_enhance.ko \
+    oplus_network_vip_task.ko \
+    qbt_handler.ko \
+    qts.ko \
+    st_fts.ko
+
 # Stock game_first differs from released OSS source and crashes recovery.
 TARGET_KERNEL_MODULE_PREBUILT_OVERRIDE_NAME := oplus_network_game_first.ko
 TARGET_KERNEL_MODULE_PREBUILT_OVERRIDE_PATH := \
